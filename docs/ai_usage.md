@@ -1,8 +1,5 @@
 # AI Use Log
 
-I used different AI tools during this assignment to help me learn faster and write cleaner code. 
-Here’s where and how I used each one:
-
 ## ChatGPT (OpenAI)
 - **Where I used it:** When I was working on the GC content problem (Rosalind #9). I wasn’t sure how to track which FASTA record had the highest GC percentage. 
 - **What I asked:** I asked ChatGPT to give me pseudocode for finding the record with the maximum GC%. 
@@ -23,5 +20,4 @@ Here’s where and how I used each one:
 - **What I decided:** For this assignment, readability was more important than tiny performance gains, so I stayed with the dictionary method. 
 - **How I verified:** I generated a long random DNA sequence (~100k bases) and tested both methods. The runtime was similar, so my simpler code was fine.
 
----
-Overall, AI tools gave me starting points and helped me refactor, but I always tested the outputs myself before committing them.
+AI tools gave me starting points and helped me refactor, but I always tested the outputs myself before committing them.
