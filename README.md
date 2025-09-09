@@ -1,2 +1,1 @@
-# bioinformatics-rosalind
-Module 03: GitHub repo submission
+Jahnavi Garikipati + 1002200930 + BIOL5340-001
