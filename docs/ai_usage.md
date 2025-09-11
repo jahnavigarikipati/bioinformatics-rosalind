@@ -1,23 +1,19 @@
-# AI Use Log
+## ChatGPT (OpenAI)  
+- **Where I used it:** For the GC-content problem.  
+- **What I asked:** How to find which FASTA record has the highest GC%.  
+- **How it helped:** Gave me code with a `parse_fasta` function and a loop to track the best ID.  
+- **What I changed:** Added Colab file upload and formatted the GC% to six decimals.  
+- **How I verified:** Tested with the Rosalind sample and got the correct output.  
 
-## ChatGPT (OpenAI)
-- **Where I used it:** When I was working on the GC content problem (Rosalind #9). I wasn’t sure how to track which FASTA record had the highest GC percentage. 
-- **What I asked:** I asked ChatGPT to give me pseudocode for finding the record with the maximum GC%. 
-- **How it helped:** It suggested keeping track of `best_id` and `best_gc` while looping through the records. 
-- **What I changed:** I rewrote the code to use my own variable names, added rounding to six decimals, and added print statements so I could double-check my results. 
-- **How I verified:** I created a small FASTA file with 3 sequences, manually calculated GC%, and confirmed the code picked the right one.
+## Gemini (Google)  
+- **Where I used it:** For the DNA to RNA transcription task.  
+- **What I asked:** A cleaner way to replace `T` with `U`.  
+- **How it helped:** Suggested using `str.replace()`.  
+- **What I changed:** Added `.strip()` to clean file input.  
+- **How I verified:** Ran the sample dataset and checked the output matched Rosalind’s.  
 
-## Gemini (Google)
-- **Where I used it:** While writing the base-count code (counting A, C, G, T). I had a basic loop but it looked messy. 
-- **What I asked:** I asked Gemini to suggest a simpler or more Pythonic approach. 
-- **How it helped:** It suggested using a dictionary with a loop instead of writing multiple `if` statements. 
-- **What I changed:** I kept the dictionary approach but limited it to only A, C, G, T so it wouldn’t count other characters. 
-- **How I verified:** I compared the dictionary results with Python’s built-in `str.count()` for the same DNA string and both matched.
-
-## DeepSeek (note only)
-- **Where I used it:** I didn’t actually commit any DeepSeek code, but I used it to think about performance. 
-- **What I asked:** I asked whether using `collections.Counter` would be faster than my dictionary counting on large sequences. 
-- **What I decided:** For this assignment, readability was more important than tiny performance gains, so I stayed with the dictionary method. 
-- **How I verified:** I generated a long random DNA sequence (~100k bases) and tested both methods. The runtime was similar, so my simpler code was fine.
-
-AI tools gave me starting points and helped me refactor, but I always tested the outputs myself before committing them.
+## DeepSeek (note only)  
+- **Where I used it:** Thought about RNA → protein translation performance.  
+- **What I asked:** If `dict.get()` lookups were faster than other methods.  
+- **What I decided:** Kept the dictionary table for readability since performance was fine.  
+- **How I verified:** Tried longer test strings; runtime was still fast.  
